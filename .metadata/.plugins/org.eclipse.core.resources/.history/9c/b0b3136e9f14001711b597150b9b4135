@@ -1,0 +1,10 @@
+package Excercises;
+
+public class MovieQuoteInfo {
+	
+	public static void firstTime()
+	{
+		
+		System.out.println("I'm the king of the world");
+	}
+}
