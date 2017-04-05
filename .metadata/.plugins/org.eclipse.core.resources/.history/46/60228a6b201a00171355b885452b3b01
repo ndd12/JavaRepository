@@ -45,11 +45,11 @@ public class Challenge1 {
 	     JOptionPane.showMessageDialog(null, "Your Roman Numeral translates to: " + numeralTranslate);
 	     
 	     int playAgain=JOptionPane.showConfirmDialog(null, "Would you like to play again? ", null, JOptionPane.YES_NO_OPTION);
-	     if(playAgain==JOptionPane.YES_OPTION){
-	    	 quit = false;
+	     if(playAgain==JOptionPane.NO_OPTION){
+	    	 quit = true;
 	     }
 	     else{
-	    	 System.exit(0);
+	    	 quit = false;
 	     }
 	     
 		}while(quit = true);

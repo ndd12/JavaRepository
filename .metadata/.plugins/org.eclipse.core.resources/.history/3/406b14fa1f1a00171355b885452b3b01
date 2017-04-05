@@ -3,12 +3,11 @@ import javax.swing.*;
 public class Challenge1 {
 	
 	public static void main(String[]args){
-		
-		boolean quit = false;
-		do{
 		int tensCounter = 0; 
 		int fiveCounter= 0;
 		int onesCounter = 0;
+		boolean quit = false;
+		do{
 		String numeral = JOptionPane.showInputDialog(null, "Please input a Roman Numeral");
 		if (numeral.contains("X"));{
 			
@@ -49,9 +48,9 @@ public class Challenge1 {
 	    	 quit = false;
 	     }
 	     else{
-	    	 System.exit(0);
+	    	 quit = true;
 	     }
 	     
-		}while(quit = true);
+		}while(quit = false);
 	}
 }

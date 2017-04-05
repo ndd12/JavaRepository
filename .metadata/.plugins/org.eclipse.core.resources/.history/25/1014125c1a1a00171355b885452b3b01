@@ -3,9 +3,6 @@ import javax.swing.*;
 public class Challenge1 {
 	
 	public static void main(String[]args){
-		
-		boolean quit = false;
-		do{
 		int tensCounter = 0; 
 		int fiveCounter= 0;
 		int onesCounter = 0;
@@ -43,15 +40,5 @@ public class Challenge1 {
 	     int oneValue = onesCounter;
 	     int numeralTranslate = tensValue + fiveValue + oneValue;
 	     JOptionPane.showMessageDialog(null, "Your Roman Numeral translates to: " + numeralTranslate);
-	     
-	     int playAgain=JOptionPane.showConfirmDialog(null, "Would you like to play again? ", null, JOptionPane.YES_NO_OPTION);
-	     if(playAgain==JOptionPane.YES_OPTION){
-	    	 quit = false;
-	     }
-	     else{
-	    	 System.exit(0);
-	     }
-	     
-		}while(quit = true);
 	}
 }

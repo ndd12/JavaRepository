@@ -49,7 +49,7 @@ public class Challenge1 {
 	    	 quit = false;
 	     }
 	     else{
-	    	 System.exit(0);
+	    	 quit = true;
 	     }
 	     
 		}while(quit = true);
