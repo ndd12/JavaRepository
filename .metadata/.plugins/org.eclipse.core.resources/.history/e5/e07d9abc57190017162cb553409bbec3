@@ -1,0 +1,37 @@
+package games;
+
+import java.util.*;
+import javax.swing.*;
+
+public class BlackJack {
+	
+	
+	
+	public static void main (String[] args){
+		Random rand = new Random();
+		
+		int cardOne = rand.nextInt(10)+1; 
+		int cardTwo = rand.nextInt(10)+1;
+		int cardTotal = cardOne + cardTwo;
+		
+		JOptionPane.showMessageDialog(null, "Card one total: "+ cardOne + "\n Card two total: "+ cardTwo
+									  + "\n Overall Card Total: "+ cardTotal);
+		
+		  	ButtonGroup buttonGroup = new ButtonGroup();
+	        final JRadioButton button1 = new JRadioButton("Hit");
+	        final JRadioButton button2 = new JRadioButton("Stand");
+	        
+	        buttonGroup.add(new JRadioButton("Hit", false));
+	        buttonGroup.add(new JRadioButton("Stand", true));
+	       
+	      
+	        JOptionPane.showMessageDialog(null, buttonGroup);
+
+	        if(button1.isSelected()){
+	        	button2.setSelected(false);
+	        }
+	        else{
+	        	button1.setSelected(false);
+	        }
+	  	}
+}

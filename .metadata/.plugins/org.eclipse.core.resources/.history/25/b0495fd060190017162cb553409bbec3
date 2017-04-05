@@ -1,0 +1,49 @@
+package games;
+
+import java.awt.GridLayout;
+import java.util.Random;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+
+public class BlackJack {
+	
+public static void main(String args[]) {
+    Random rand = new Random();
+	
+	int cardOne = rand.nextInt(10)+1; 
+	int cardTwo = rand.nextInt(10)+1;
+	int cardTotal = cardOne + cardTwo;
+	
+	JOptionPane.showConfirmDialog(null, "Card one total: "+ cardOne + "\n Card two total: "+ cardTwo
+								  + "\n Overall Card Total: "+ cardTotal);
+	
+	JFrame frame = new JFrame("Grouping Example");
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+    JPanel panel = new JPanel(new GridLayout(0, 1));
+
+    ButtonGroup group = new ButtonGroup();
+    JRadioButton hitButton = new JRadioButton("Hit");
+    JRadioButton standButton = new JRadioButton("Stand");
+
+    
+    panel.add(new JLabel("Card one:  "+ cardOne));
+    panel.add(new JLabel("Card two: "+ cardTwo));
+    panel.add(new JLabel("Overall card total: "+ cardTotal));
+    panel.add(new JLabel("What Would you like to do next? "));
+    panel.add(hitButton);
+    group.add(hitButton);
+    panel.add(standButton);
+    group.add(standButton);
+
+
+    frame.add(panel);
+    frame.setSize(300, 200);
+    frame.setVisible(true);
+  }
+}
