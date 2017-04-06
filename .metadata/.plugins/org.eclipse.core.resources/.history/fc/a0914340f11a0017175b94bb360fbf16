@@ -1,19 +1,7 @@
 package Challenges;
 import javax.swing.*;
 public class Challenge1 {
-	/*
-	 * 
-Problem 1. Roman Numeral Translator
-
-Your program should accept a number expressed using slightly modified Roman numerals as input and output the number as a decimal number. All numbers will be between 1 and 50.
-
-Because real Roman numerals have so many small and complicated rules, we’ll be using a slightly modified form of Roman numerals – no subtraction. Here are the rules your program should use to read in the Roman numerals:
-I=1, V=5, X=10, L=50
-Repeated numerals are added (XX=20, III=3, XXXXVI=46)
-Only I and X can be repeated
-Each numeral will be less than or equal to the previous one (XVI=16 and is legal, XIV is not legal for this problem)
-
-	 */
+	
 	public static void main(String[]args){
 		
 		boolean quit = false;
