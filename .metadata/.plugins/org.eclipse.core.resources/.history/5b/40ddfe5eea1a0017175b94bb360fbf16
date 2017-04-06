@@ -1,5 +1,5 @@
 package Challenges;
-import javax .swing.*;
+import javax.swing.*;
 public class Challenge2 {
 
 	public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Challenge2 {
 		String cOP = JOptionPane.showInputDialog(null, "What percent of the votes did canidate 1 receive? (Decimal Number Please)");
 		double canOnePercent = Double.parseDouble(cOP);
 		
-		String cTP = JOptionPane.showInputDialog(null, "What percent of the votes did canidate 2 receive?(Decimal Number Please)");
+		String cTP = JOptionPane.showInputDialog(null, "What percent of the votes did canidate 1 receive?(Decimal Number Please)");
 		double canTwoPercent = Double.parseDouble(cTP);
 		
 		double canThreePercent = 1 - canTwoPercent - canOnePercent;
@@ -33,7 +33,6 @@ public class Challenge2 {
 		}
 		else{
 			if(canTwoPercent<.5 && canThreePercent<.5){
-				canOneDelegates = delegateNumber*canOnePercent;
 				canTwoDelegates = delegateNumber*canTwoPercent;
 				canThreeDelegates = delegateNumber*canThreePercent;
 			}
@@ -45,17 +44,6 @@ public class Challenge2 {
 		}
 		else if(canTwoPercent<.15){
 			canTwoDelegates = 0;
-			if(canTwoPercent<.5 && canThreePercent<.5){
-				canOneDelegates = delegateNumber*canOnePercent;
-				canThreeDelegates = delegateNumber*canThreePercent;
-			}
-		}
-		else{
-			if(canOnePercent<.5 && canThreePercent<.5){
-				canOneDelegates = delegateNumber*canOnePercent;
-				canTwoDelegates = delegateNumber*canTwoPercent;
-				canThreeDelegates = delegateNumber*canThreePercent;
-			}
 		}
 		if(canThreePercent > .50){
 			canThreeDelegates = delegateNumber;
@@ -64,19 +52,8 @@ public class Challenge2 {
 		}
 		else if(canThreePercent<.15){
 			canThreeDelegates = 0;
-			if(canTwoPercent<.5 && canThreePercent<.5){
-				canOneDelegates = delegateNumber*canOnePercent;
-				canTwoDelegates = delegateNumber*canTwoPercent;
-			}
 		}
-		else{
-			if(canTwoPercent<.5 && canOnePercent<.5){
-				canOneDelegates = delegateNumber*canOnePercent;
-				canTwoDelegates = delegateNumber*canTwoPercent;
-				canThreeDelegates = delegateNumber*canThreePercent;
-			}
-		}
-		JOptionPane.showMessageDialog(null, "Did it work? " + "\n"+delegateNumber + "\n"+canOneDelegates+ "\n"+canTwoDelegates + "\n"+canThreeDelegates);
+		JOptionPane.showMessageDialog(null, "Did it work? " + delegateNumber + canOneDelegates+ canTwoDelegates + canThreeDelegates);
 	}
 
 }
