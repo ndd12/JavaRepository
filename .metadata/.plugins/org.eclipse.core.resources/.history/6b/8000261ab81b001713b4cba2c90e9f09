@@ -20,6 +20,9 @@ public class Challenge4 {
 			ambig = true;
 			}
 		}
+		else if(){
+			
+		} 
 		if(ambig = true){
 			JOptionPane.showMessageDialog(null, "This date is Ambiguous");
 		}
