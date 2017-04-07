@@ -1,9 +1,0 @@
-package Excercises;
-
-public class MovieQuote {
-	
-	public static void main(String[]args){
-		String movieQuote = "I'm the king of the world";
-		System.out.println(movieQuote);
-	}
-}

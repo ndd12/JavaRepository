@@ -32,6 +32,7 @@ public class Challenge3 {
 				winner = team1;
 			}
 		}
-	JOptionPane.showMessageDialog(null,"The winner is: " + winner);
+	JOptionPane.showMessageDialog(null,"Team 1 first letter location: "+ team1FirstLocation+
+									"\n Team 2 first letter location"+team2FirstLocation+"The winner is: " + winner);
 	}
 }

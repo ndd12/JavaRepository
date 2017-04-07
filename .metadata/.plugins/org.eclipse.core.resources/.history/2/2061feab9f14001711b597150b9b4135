@@ -1,9 +1,0 @@
-package Excercises;
-
-public class MovieQuoteInfo {
-	
-	public static void getQuote()
-	{
-		MovieQuote.getQuote();
-	}
-}
