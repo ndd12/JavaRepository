@@ -1,8 +1,8 @@
 package CreditCardFraud;
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.io.FileReader;
+import java.io.BufferedReader;
 
 public class ReadFile {
 	
@@ -28,7 +28,24 @@ public class ReadFile {
 		textReader.close();
 		return textData;
 	}
-	
+	public String[] creditFraudTest() throws IOException {
+		FileReader fr = new FileReader(path);
+		BufferedReader textReader = new BufferedReader(fr);
+		
+		int numberOfLines = readLines();
+		String[] textData = new String[numberOfLines];
+		
+		int i;
+		
+		for(i=0; i < numberOfLines; i++){
+			textData[i] = textReader.readLine();
+			if(isNumeric(textData[i])){
+				
+		}
+		
+		textReader.close();}
+		return textData;
+	}
 	public static boolean isNumeric(String str)
 	{
 	  try  

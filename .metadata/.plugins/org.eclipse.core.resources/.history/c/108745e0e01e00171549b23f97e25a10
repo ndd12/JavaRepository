@@ -1,8 +1,7 @@
 package CreditCardFraud;
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.io.FileReader;
+import java.io.BufferedReader;
 
 public class ReadFile {
 	
@@ -28,27 +27,15 @@ public class ReadFile {
 		textReader.close();
 		return textData;
 	}
-	
-	public static boolean isNumeric(String str)
-	{
-	  try  
-	  {  
-	    double d = Double.parseDouble(str);  
-	  }  
-	  catch(NumberFormatException nfe)  
-	  {  
-	    return false;  
-	  }  
-	  return true;
-	}
 	int readLines() throws IOException {
 		
 		FileReader file_to_read = new FileReader(path);
 		BufferedReader bf = new BufferedReader(file_to_read);
 		
+		String aLine;
 		int numberOfLines = 0;
 		
-		while(( bf.readLine()) != null){
+		while(( aLine = bf.readLine()) != null){
 				numberOfLines++;
 			}
 		bf.close();
