@@ -1,0 +1,14 @@
+import java.util.*;
+public class Civilization {
+	public static int Generatefunds() {
+		Random rand = new Random();
+		int n = rand.nextInt(25)+75;
+		System.out.println(n);
+		return n;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Civilization.Generatefunds();
+	}
+
+}

@@ -1,0 +1,60 @@
+package CreditCardFraud;
+import java.util.List;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class FileData {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+			String file_name = "C:/Users/nd122222/Desktop/test.txt";
+	
+			try{
+				ReadFile file = new ReadFile(file_name);
+				String[] aryLines = file.OpenFile();
+				
+				int i;
+				for ( i=0; i < aryLines.length; i++ ) {
+				System.out.println( aryLines[ i ] ); 
+				String word = aryLines[i];
+				String check = "|";
+				int index = word.indexOf(check);
+				int counter = 0;
+				while(index >= 0){
+					counter ++;
+				//	System.out.println(index);
+					int useValue1=0;
+					int useValue2=10;
+					int useValue3=0;
+					if (counter==1){
+						useValue1 = index;
+					}
+					else if(counter == 2){
+						useValue2 = index;
+					}	
+					else if(counter == 3){
+						useValue3 = index;
+					}
+					 int depositNumber = Integer.parseInt(aryLines[i].substring(useValue1, useValue2));
+					 System.out.println(depositNumber);
+					}index = word.indexOf(check, index +1);
+				}
+				
+				
+				
+			}
+			catch (IOException e){
+				System.out.println(e.getMessage());
+			}
+			
+	}
+
+	private static int readLines() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
+

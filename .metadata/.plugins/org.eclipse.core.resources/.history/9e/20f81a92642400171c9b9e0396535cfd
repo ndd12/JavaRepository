@@ -1,0 +1,40 @@
+import java.util.*;
+public class Countries {
+
+	public static void generateOpps(){
+		Random rand = new Random();
+		int n = rand.nextInt(25)+75;
+		String c1Name = "Germany ";
+		String c2Name = "Portugal ";
+		String c3Name = "Russia ";
+		String c4Name = "China ";
+		String c5Name = "Syria ";
+		String c6Name = "Kenya ";
+		String c7Name = "India ";
+		String c8Name = "Vietnam ";
+		String c9Name = "France ";
+		int[] Currency = {rand.nextInt(25)+75,rand.nextInt(25)+75,rand.nextInt(25)+75,rand.nextInt(25)+75,rand.nextInt(25)+75,rand.nextInt(25)+75,rand.nextInt(25)+75,rand.nextInt(25)+75,rand.nextInt(25)+75};
+		String country1 = c1Name+ Integer.toString(Currency[0]);
+		String country2 = c2Name+ Integer.toString(Currency[1]);
+		String country3 = c3Name+ Integer.toString(Currency[2]);
+		String country4 = c4Name+ Integer.toString(Currency[3]);
+		String country5 = c5Name+ Integer.toString(Currency[4]);
+		String country6 = c6Name+ Integer.toString(Currency[5]);
+		String country7 = c7Name+ Integer.toString(Currency[6]);
+		String country8 = c8Name+ Integer.toString(Currency[7]);
+		String country9 = c9Name+ Integer.toString(Currency[8]);
+		String[] countries = {country1, country2, country3, country4, country5, country6, country7, country8, country9};
+		for(int i = 0; i<=countries.length-1; i++){
+		System.out.println(countries[i]);
+		}
+		int max = 0;
+		for(int i = 0; i<=Currency.length-1;i++){
+			
+			if (Currency[i]>max){
+				max = Currency[i];
+				System.out.println(max);
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Civilization.java&apos; to &apos;Civilization/src&apos;&#x0D;&#x0A;- Original project: &apos;GameZones&apos;&#x0D;&#x0A;- Destination element: &apos;Civilization/src&apos;&#x0D;&#x0A;- Original element: &apos;Civilization.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=Civilization/src" element1="/src&lt;{Civilization.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1492107743862" units="1" version="1.0"/>
+</session>

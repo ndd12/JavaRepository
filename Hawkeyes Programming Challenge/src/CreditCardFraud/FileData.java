@@ -1,4 +1,5 @@
 package CreditCardFraud;
+import java.util.List;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -16,18 +17,31 @@ public class FileData {
 				
 				int i;
 				for ( i=0; i < aryLines.length; i++ ) {
-				System.out.println( aryLines[ i ] ) ;
+				System.out.println( aryLines[ i ] ); 
 				}
+				String word = aryLines[0];
+				String check = "|";
+				int index1 = word.indexOf(check);
+				System.out.println(index1);
+			    int index2 = word.substring(index1,check).indexOf(check);
+			    int index2Location = word.
+			    String deposit = aryLines[0].substring(index1,index2);
+			    int depositNumber = Integer.parseInt(deposit);
+			    System.out.println(depositNumber);
+				
+				
 				
 			}
 			catch (IOException e){
 				System.out.println(e.getMessage());
 			}
+			
 	}
 
 	private static int readLines() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+	
 }
 

@@ -1,0 +1,15 @@
+import java.util.*;
+import javax.swing.*;
+public class Civilization {
+	public static int Generatefunds() {
+		Random rand = new Random();
+		int n = rand.nextInt(25)+75;
+		System.out.println(n);
+		return n;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JOptionPane.showMessageDialog(null, "Your Starting Funds are: $"+Civilization.Generatefunds());
+	}
+
+}

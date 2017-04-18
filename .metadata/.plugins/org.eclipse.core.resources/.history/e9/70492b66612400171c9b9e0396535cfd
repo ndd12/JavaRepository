@@ -1,0 +1,42 @@
+import java.util.*;
+public class Countries {
+
+	public String generateOpps(){
+		Random rand = new Random();
+		int n = rand.nextInt(25)+75;
+		String c1Name = "Germany ";
+		String c2Name = "Portugal ";
+		String c3Name = "Russia ";
+		String c4Name = "China ";
+		String c5Name = "Syria ";
+		String c6Name = "Kenya ";
+		String c7Name = "India ";
+		String c8Name = "Vietnam ";
+		String c9Name = "France ";
+		int c1Currency = rand.nextInt(25)+75;
+		int c2Currency = rand.nextInt(25)+75;
+		int c3Currency = rand.nextInt(25)+75;
+		int c4Currency = rand.nextInt(25)+75;
+		int c5Currency = rand.nextInt(25)+75;
+		int c6Currency = rand.nextInt(25)+75;
+		int c7Currency = rand.nextInt(25)+75;
+		int c8Currency = rand.nextInt(25)+75;
+		int c9Currency = rand.nextInt(25)+75;
+		String country1 = c1Name+ Integer.toString(c1Currency);
+		String country2 = c2Name+ Integer.toString(c2Currency);
+		String country3 = c3Name+ Integer.toString(c3Currency);
+		String country4 = c4Name+ Integer.toString(c4Currency);
+		String country5 = c5Name+ Integer.toString(c5Currency);
+		String country6 = c6Name+ Integer.toString(c6Currency);
+		String country7 = c7Name+ Integer.toString(c7Currency);
+		String country8 = c8Name+ Integer.toString(c8Currency);
+		String country9 = c9Name+ Integer.toString(c9Currency);
+		String[] countries = {country1, country2, country3, country4, country5, country6, country7, country8, country9};
+	if(1==1){
+		for(int i = 0; i<=countries.length; i++){
+		return countries[i];
+	}
+}
+	else{return null;}
+}
+}

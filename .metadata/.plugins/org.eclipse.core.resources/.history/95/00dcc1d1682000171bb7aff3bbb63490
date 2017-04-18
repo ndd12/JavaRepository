@@ -1,0 +1,18 @@
+import java.util.*;
+import javax.swing.*;
+public class GameZoneChapter3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random rand = new Random();
+		String[] classes = new String[]{"Spades", "Hearts", "Diamonds", "Clubs"};
+		int card1Class = rand.nextInt(3);		
+		int card2Class = rand.nextInt(3);
+		int card1= rand.nextInt(13) + 1;
+		int card2= rand.nextInt(13) + 1;
+		
+		JOptionPane.showMessageDialog(null, "Your First Card is the "+card1+" of "+classes[card1Class]);
+		JOptionPane.showMessageDialog(null, "Your First Card is the "+card2+" of "+classes[card2Class]);
+	}
+
+}

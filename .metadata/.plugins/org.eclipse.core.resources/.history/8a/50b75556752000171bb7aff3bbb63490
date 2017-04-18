@@ -1,0 +1,32 @@
+import java.util.*;
+import javax.swing.*;
+
+public class Civilization {
+	
+	public static int Generatefunds() {
+		Random rand = new Random();
+		int n = rand.nextInt(25)+75;
+		return n;
+	}
+	public static String Opponets(){
+		String[] opponetCountries = {
+				"\nGermany ",
+				"Portugal",
+				"Russia ",
+				"China ",
+				"Syria ",
+				"Kenya ",
+				"India ",
+				"Vietnam ",
+				"Great Britain ",
+				"France \n"
+		};
+		return Arrays.toString(opponetCountries);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JOptionPane.showMessageDialog(null, "Your Starting Funds are: $"+Civilization.Generatefunds());
+		JOptionPane.showMessageDialog(null, "Your opponets are: "+Civilization.Opponets());
+	}
+
+}

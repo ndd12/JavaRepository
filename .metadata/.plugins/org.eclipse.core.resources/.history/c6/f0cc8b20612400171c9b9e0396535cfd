@@ -1,0 +1,30 @@
+import java.util.*;
+public class Countries {
+
+	public static int countryFunds() {
+		return 0;
+	}{
+		String[] opponetCountries = {
+					" Germany ",
+					" Portugal",
+					" Russia ",
+					" China ",
+					" Syria ",
+					" Kenya ",
+					" India ",
+					" Vietnam ",
+					" Great Britain ",
+					" France "
+			};
+		int[] startingCurrency = {
+			75,80,85,90,95,77,82,87,92,97
+		 };
+	}
+public static int generateNumber(){
+		Random rand = new Random();
+		
+		int n = rand.nextInt(25)+75;
+		return n;
+	}
+
+}
